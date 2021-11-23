@@ -31,20 +31,26 @@
             height: auto;
             border: 1px solid var(--Very-light-pink);
             border-radius: 6px;
+            padding: 20px 20px 0 20px;
         }
         .desktop-menu ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
-         .desktop-menu ul li {
+        .desktop-menu ul li {
            text-align: end;
+        }
+
+         .desktop-menu ul li:nth-child(1),
+         .desktop-menu ul li:nth-child(2),
+          {
+          font-weight: bold;
         }
 
          .desktop-menu ul li:last-child {
          padding: 20px;
-         border: 1px solid var(--Very-light-pink);
+         border-top: 1px solid var(--Very-light-pink);
         }
 
         .desktop-menu ul li:last-child a {
