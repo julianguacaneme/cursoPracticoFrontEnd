@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
@@ -28,22 +28,65 @@
         margin: 0;
         font-family: "Quicksand", sans-serif;
       }
-      </style>
 
-</head>
-<body>
+      .product-detail {
+        width: 360px;
+        padding: 24px;
+      }
+      .product-detail-close {
+        background: var(--white);
+
+      }
+      .product-detail-close img {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 2;
+      }
+      .product-detail img:hover {
+        cursor: pointer;
+      }
+
+      .primary-button {
+        background-color: var(--Hospital-green);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+      }
+      .add-cart-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
     <aside class="product-detal">
-        <img src="./icons/icon_close.png" alt="close">
-        <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?cs=srgb&dl=pexels-philipp-m-100582.jpg&fm=jpg" alt="Bike">
-        <div class="product-info">
-            <p>$35,00</p>
-            <p>Bike</p>
-            <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace</p>
-            <button class="primary-button">
-                <img src="./icons/bt_added_to_cart.svg" alt="at to cart">
-                Add to cart
-            </button>
-        </div>
+      <div class="product-detail-close">
+<img src="./icons/icon_close.png" alt="close" />
+      </div>
+      
+      <img
+        src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?cs=srgb&dl=pexels-philipp-m-100582.jpg&fm=jpg"
+        alt="Bike"
+      />
+      <div class="product-info">
+        <p>$35,00</p>
+        <p>Bike</p>
+        <p>
+          With its practical position, this bike also fulfills a decorative
+          function, add your hall or workspace
+        </p>
+        <button class="primary-button add-cart-button">
+          <img src="./icons/bt_added_to_cart.svg" alt="at to cart" />
+          Add to cart
+        </button>
+      </div>
     </aside>
-</body>
+  </body>
 </html>
