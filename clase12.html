@@ -32,20 +32,57 @@
       .product-detail {
         width: 360px;
         padding: 24px;
+        position: absolute;
+        right: 0;
       }
       .product-detail-close {
         background: var(--white);
-
-      }
-      .product-detail-close img {
+        width: 14px;
+        height: 14px;
         position: absolute;
-        top: 12px;
-        left: 12px;
+        top: 24px;
+        left: 24px;
         z-index: 2;
+        padding: 12px;
+        border-radius: 50%;
       }
-      .product-detail img:hover {
+
+      .product-detail:hover {
         cursor: pointer;
       }
+      .product-detail > img:nth-child(2) {
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+      }
+      .product-info {
+        margin: 24px 24px 0 24px;
+      }
+      .product-info p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+
+      }
+      .product-info p:nth-child(2) {
+        color: var(--Very-light-pink);
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 36
+        px;
+
+      }
+      .product-info p:nth-child(3) {
+        color: var(--Very-light-pink);
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 36
+        px;
+
+      }
+
 
       .primary-button {
         background-color: var(--Hospital-green);
@@ -58,19 +95,26 @@
         font-weight: bold;
         height: 50px;
       }
+
       .add-cart-button {
         display: flex;
         align-items: center;
         justify-content: center;
       }
+      @media (max-width: 640px) {
+        .product-detail {
+          width: 100%;
+        }
+
+      }
     </style>
   </head>
   <body>
-    <aside class="product-detal">
+    <aside class="product-detail">
       <div class="product-detail-close">
-<img src="./icons/icon_close.png" alt="close" />
+        <img src="./icons/icon_close.png" alt="close" />
       </div>
-      
+
       <img
         src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?cs=srgb&dl=pexels-philipp-m-100582.jpg&fm=jpg"
         alt="Bike"
